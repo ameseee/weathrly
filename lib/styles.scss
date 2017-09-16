@@ -1,0 +1,150 @@
+@import url(https://fonts.googleapis.com/css?family=Vibur);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+$pink-color: #ff4444;
+$green-color: #A2FF44;
+$purple-color: #A244FF;
+$blue-color: #44ffff;
+$light-charcoal: #3B3B3B;
+$dark-charcoal: #202020;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.search-div {
+
+}
+
+.search-input {
+  outline: none;
+  height: 20px;
+  padding: 3px;
+}
+
+.search-input::placeholder {
+  // padding: 3px;
+  color: #D5D8DC;
+}
+
+.search-btn {
+  border: none;
+  outline: none;
+  background-color: $purple-color;
+  color: #fff;
+  font-family: 'Roboto';
+  padding: 3px;
+  height: 20px;
+}
+
+.search-btn:hover {
+  background-color: $pink-color;
+}
+
+.current-div {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.current-div h2,
+.current-div h3,
+.current-div h4,
+.current-div p,
+.current-div span {
+  font-family: 'Roboto';
+}
+
+.current-top {
+  border: 1px solid pink;
+  display: inline-block;
+  margin: 10px 5px;
+  float: right;
+}
+
+.wearthrly {
+  color: $pink-color;
+  font-size: 170%;
+  margin: 10px 5px;
+  font-family: 'Vibur';
+}
+
+.location {
+  font-size: 80%;
+  text-transform: uppercase;
+}
+
+.current-temp {
+  font-size: 200%;
+  margin-left: 30px;
+}
+
+.brief-summary {
+  font-size: 70%;
+}
+
+.current-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 5px;
+}
+
+.day {
+  font-size: 70%;
+  display: inline-block;
+}
+
+.high-low {
+  font-size: 70%;
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+.today-header {
+  text-transform: uppercase;
+  font-size: 75%;
+  background-color: $light-charcoal;
+  color: #fff;
+  padding: 5px;
+}
+
+.hour-card-container {
+  height: 85px;
+  overflow: hidden;
+  overflow: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 5px;
+}
+
+.hour-card {
+  border: 1px solid $blue-color;
+  margin: 3px;
+  display: inline-block;
+  padding: 5px;
+  // width: 65px;
+}
+
+.hour-card-hour {
+  font-size: 75%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+// .hour-card-icon {
+//   margin-top: 10px;
+// }
+
+.hour-card-temp {
+  font-size: 75%;
+  text-align: center;
+}
