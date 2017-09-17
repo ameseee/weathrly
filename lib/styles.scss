@@ -108,6 +108,12 @@ $dark-charcoal: #202020;
 .current-icon {
   text-align: center;
 }
+
+.summary {
+  margin: 5px;
+  font-size: 80%; 
+}
+
 .day {
   font-size: 70%;
   display: inline-block;
@@ -123,13 +129,15 @@ $dark-charcoal: #202020;
 }
 
 .today-header,
-.this-week-header {
+.this-week-header,
+.current-header {
   text-transform: uppercase;
   font-size: 75%;
   background-color: $light-charcoal;
   color: #fff;
   padding: 5px;
   text-transform: uppercase;
+  margin-top: 15px;
 }
 
 .card-container,
@@ -140,7 +148,6 @@ $dark-charcoal: #202020;
   display: flex;
   flex-wrap: nowrap;
   padding: 5px;
-  padding-bottom: 10px;
 }
 
 .day-card-container {
