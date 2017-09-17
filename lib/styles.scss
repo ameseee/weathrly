@@ -5,6 +5,7 @@ $pink-color: #ff4444;
 $green-color: #A2FF44;
 $purple-color: #A244FF;
 $blue-color: #44ffff;
+$light-grey: #CECECE;
 $light-charcoal: #3B3B3B;
 $dark-charcoal: #202020;
 
@@ -15,7 +16,8 @@ $dark-charcoal: #202020;
 }
 
 .search-div {
-
+  padding: 10px;
+  background-color: $dark-charcoal;
 }
 
 .search-input {
@@ -25,8 +27,7 @@ $dark-charcoal: #202020;
 }
 
 .search-input::placeholder {
-  // padding: 3px;
-  color: #D5D8DC;
+  color: $light-grey;
 }
 
 .search-btn {
@@ -47,6 +48,7 @@ $dark-charcoal: #202020;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: $dark-charcoal;
 }
 
 .current-div h2,
@@ -55,19 +57,21 @@ $dark-charcoal: #202020;
 .current-div p,
 .current-div span {
   font-family: 'Roboto';
+  color: $light-grey;
 }
 
 .current-top {
-  border: 1px solid pink;
+  // border: 1px solid pink;
   display: inline-block;
-  margin: 10px 5px;
+  margin: 10px 10px;
   float: right;
 }
 
 .wearthrly {
   color: $pink-color;
   font-size: 170%;
-  margin: 10px 5px;
+  margin: 0px 5px 10px 5px;
+  padding-top: 10px;
   font-family: 'Vibur';
 }
 
@@ -76,13 +80,22 @@ $dark-charcoal: #202020;
   text-transform: uppercase;
 }
 
+.search-icon {
+  width: 15px;
+  height: auto;
+  margin-right: 5px;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
 .current-temp {
   font-size: 200%;
-  margin-left: 30px;
+  text-align: center;
 }
 
 .brief-summary {
   font-size: 70%;
+  margin-left: 20px;
 }
 
 .current-bottom {
@@ -92,6 +105,9 @@ $dark-charcoal: #202020;
   margin: 10px 5px;
 }
 
+.current-icon {
+  text-align: center;
+}
 .day {
   font-size: 70%;
   display: inline-block;
@@ -106,45 +122,57 @@ $dark-charcoal: #202020;
   display: none;
 }
 
-
-
-
-.today-header {
+.today-header,
+.this-week-header {
   text-transform: uppercase;
   font-size: 75%;
   background-color: $light-charcoal;
   color: #fff;
   padding: 5px;
+  text-transform: uppercase;
 }
 
-.hour-card-container {
+.card-container,
+.day-card-container {
   height: 85px;
   overflow: hidden;
   overflow: scroll;
   display: flex;
   flex-wrap: nowrap;
   padding: 5px;
+  padding-bottom: 10px;
 }
 
-.hour-card {
-  border: 1px solid $blue-color;
-  margin: 3px;
-  display: inline-block;
+.day-card-container {
+  padding-bottom: 20px;
+}
+
+.card {
+  border-right: 0.5px solid $light-grey;
   padding: 5px;
-  // width: 65px;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.hour-card-hour {
-  font-size: 75%;
+.hour-card-hour,
+.ten-day-card-day {
+  font-size: 60%;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-// .hour-card-icon {
-//   margin-top: 10px;
-// }
+.card-icon {
+  font-size: 30%;
+  text-align: center;
+}
 
 .hour-card-temp {
-  font-size: 75%;
+  font-size: 70%;
+  text-align: center;
+}
+
+.card-lo-hi {
+  font-size: 70%;
   text-align: center;
 }
