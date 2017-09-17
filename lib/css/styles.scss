@@ -16,9 +16,15 @@ $dark-charcoal: #202020;
 }
 
 .wi {
-  color: white;
+  color: $light-grey;
   text-align: center;
-  font-size: 2em;
+  font-size: 14px;
+  margin-top: 12px;
+  margin-bottom: 10px;
+}
+
+.wi:hover {
+  text-shadow: 0 -10px 100px, 0 0 2px, 0 0 1em $pink-color, 0 0 0.5em $pink-color, 0 0 0.1em $pink-color;
 }
 
 .search-div {
@@ -76,21 +82,23 @@ $dark-charcoal: #202020;
 
 .current-top {
   display: inline-block;
-  margin: 10px;
+  margin: 15px;
   float: right;
+  padding-top: 10px;
 }
 
 .wearthrly {
   color: $pink-color;
-  font-size: 200%;
-  margin: 0px 5px 10px 5px;
+  font-size: 300%;
+  margin: 0px 5px 10px 15px;
   padding-top: 10px;
   font-family: 'Vibur';
 }
 
 .location {
-  font-size: 100%;
+  font-size: 120%;
   text-transform: uppercase;
+  margin-right: 10px;
 }
 
 .search-icon {
@@ -101,15 +109,22 @@ $dark-charcoal: #202020;
   padding-left: 3px;
 }
 
+.bottom-of-page {
+  display: flex;
+  flex-direction: row;
+}
+
 .current-section {
-  border: 1px solid $purple-color;
   display: inline-block;
   width: 25%;
+  margin-left: 3%;
 }
 
 .current-temp {
   font-size: 200%;
   text-align: center;
+  margin-top: 35px;
+  margin-bottom: 50px;
 }
 
 .current-bottom {
@@ -123,8 +138,10 @@ $dark-charcoal: #202020;
   text-align: center;
   text-shadow: 0 -10px 100px, 0 0 2px, 0 0 1em $pink-color, 0 0 0.5em $pink-color, 0 0 0.1em $pink-color;
   margin-bottom: 20px;
-  border: 1px solid yellow;
-  font-size: 100px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 150px;
 }
 
 .summary {
@@ -135,7 +152,6 @@ $dark-charcoal: #202020;
 .today-section,
 .this-week-section {
     display: inline-block;
-    border: 1px solid red;
 }
 
 .day {
@@ -160,21 +176,16 @@ $dark-charcoal: #202020;
 .today-header,
 .this-week-header,
 .current-header {
-  text-transform: uppercase;
   font-size: 100%;
   background-color: $light-charcoal;
-  color: #fff;
-  padding: 5px;
+  padding: 5px 5px 5px 10px;
   text-transform: uppercase;
-}
-
-.this-week-header {
-  margin-top: 15px;
+  box-shadow: 0px 6px 10px -4px #FFA2A2;
 }
 
 .card-container,
 .day-card-container {
-  height: 85px;
+  height: 95px;
   overflow: hidden;
   overflow: scroll;
   display: flex;
@@ -188,7 +199,7 @@ $dark-charcoal: #202020;
 
 .card {
   border-right: 0.5px solid $light-grey;
-  padding: 5px;
+  padding: 10px 5px;
   width: 80px;
   display: flex;
   flex-direction: column;
@@ -198,11 +209,6 @@ $dark-charcoal: #202020;
 .hour-card-hour,
 .ten-day-card-day {
   font-size: 90%;
-  text-align: center;
-}
-
-.card-icon {
-  font-size: 30%;
   text-align: center;
 }
 
@@ -217,7 +223,7 @@ $dark-charcoal: #202020;
 }
 
 .right-desktop {
-  border: 1px solid pink;
   display: inline-block;
-  width: 75%;
+  width: 70%;
+  margin-left: 3%;
 }
