@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Vibur);
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Karla);
 
 $pink-color: #ff4444;
 $green-color: #A2FF44;
@@ -21,10 +21,10 @@ $dark-charcoal: #202020;
 }
 
 .search-input {
-  height: 20px;
-  margin-right: 3px;
+  height: 24px;
+  margin-right: 5px;
   outline: none;
-  padding: 3px;
+  padding: 5px;
   background-color: $dark-charcoal;
   border: $dark-charcoal;
   border-bottom: 0.5px solid $light-grey;
@@ -37,15 +37,15 @@ $dark-charcoal: #202020;
 }
 
 .search-btn {
-  height: 20px;
-  padding: 3px 5px;
+  height: 24px;
+  padding: 5px 8px;
   border: none;
   outline: none;
   background-color: $pink-color;
-  border-radius: 2px;
+  border-radius: 4px;
   box-shadow: 0 -10px 100px, 0 0 2px, 0 0 1em $pink-color, 0 0 0.5em $pink-color, 0 0 0.1em $pink-color;
   color: #fff;
-  font-family: 'Roboto';
+  font-family: 'Karla';
 }
 
 .search-btn:hover {
@@ -64,26 +64,26 @@ $dark-charcoal: #202020;
 .current-div h4,
 .current-div p,
 .current-div span {
-  font-family: 'Roboto';
+  font-family: 'Karla';
   color: $light-grey;
 }
 
 .current-top {
   display: inline-block;
-  margin: 10px 10px;
+  margin: 10px;
   float: right;
 }
 
 .wearthrly {
   color: $pink-color;
-  font-size: 170%;
+  font-size: 200%;
   margin: 0px 5px 10px 5px;
   padding-top: 10px;
   font-family: 'Vibur';
 }
 
 .location {
-  font-size: 80%;
+  font-size: 100%;
   text-transform: uppercase;
 }
 
@@ -95,12 +95,16 @@ $dark-charcoal: #202020;
   padding-left: 3px;
 }
 
+.current-section {
+  border: 1px solid $purple-color;
+  display: inline-block;
+  width: 25%;
+}
+
 .current-temp {
   font-size: 200%;
   text-align: center;
 }
-
-
 
 .current-bottom {
   display: flex;
@@ -112,25 +116,34 @@ $dark-charcoal: #202020;
 .current-icon {
   text-align: center;
   text-shadow: 0 -10px 100px, 0 0 2px, 0 0 1em $pink-color, 0 0 0.5em $pink-color, 0 0 0.1em $pink-color;
+  margin-bottom: 20px;
+  border: 1px solid yellow;
+  font-size: 100px;
 }
 
 .summary {
   margin: 5px;
-  font-size: 80%;
+  font-size: 100%;
+}
+
+.today-section,
+.this-week-section {
+    display: inline-block;
+    border: 1px solid red;
 }
 
 .day {
-  font-size: 70%;
+  font-size: 90%;
   margin-left: 20px;
 }
 
 .brief-summary {
-  font-size: 70%;
+  font-size: 100%;
   display: inline-block;
 }
 
 .high-low {
-  font-size: 70%;
+  font-size: 100%;
   display: inline-block;
 }
 
@@ -142,11 +155,14 @@ $dark-charcoal: #202020;
 .this-week-header,
 .current-header {
   text-transform: uppercase;
-  font-size: 75%;
+  font-size: 100%;
   background-color: $light-charcoal;
   color: #fff;
   padding: 5px;
   text-transform: uppercase;
+}
+
+.this-week-header {
   margin-top: 15px;
 }
 
@@ -167,7 +183,7 @@ $dark-charcoal: #202020;
 .card {
   border-right: 0.5px solid $light-grey;
   padding: 5px;
-  width: 50px;
+  width: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -175,7 +191,7 @@ $dark-charcoal: #202020;
 
 .hour-card-hour,
 .ten-day-card-day {
-  font-size: 60%;
+  font-size: 90%;
   text-align: center;
 }
 
@@ -185,11 +201,17 @@ $dark-charcoal: #202020;
 }
 
 .hour-card-temp {
-  font-size: 70%;
+  font-size: 110%;
   text-align: center;
 }
 
 .card-lo-hi {
-  font-size: 70%;
+  font-size: 90%;
   text-align: center;
+}
+
+.right-desktop {
+  border: 1px solid pink;
+  display: inline-block;
+  width: 75%;
 }
