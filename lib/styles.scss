@@ -21,9 +21,15 @@ $dark-charcoal: #202020;
 }
 
 .search-input {
-  outline: none;
   height: 20px;
+  margin-right: 3px;
+  outline: none;
   padding: 3px;
+  background-color: $dark-charcoal;
+  border: $dark-charcoal;
+  border-bottom: 0.5px solid $light-grey;
+  color: $light-grey;
+  caret-color: $light-grey;
 }
 
 .search-input::placeholder {
@@ -31,17 +37,19 @@ $dark-charcoal: #202020;
 }
 
 .search-btn {
+  height: 20px;
+  padding: 3px 5px;
   border: none;
   outline: none;
-  background-color: $purple-color;
+  background-color: $pink-color;
+  border-radius: 2px;
+  box-shadow: 0 -10px 100px, 0 0 2px, 0 0 1em $pink-color, 0 0 0.5em $pink-color, 0 0 0.1em $pink-color;
   color: #fff;
   font-family: 'Roboto';
-  padding: 3px;
-  height: 20px;
 }
 
 .search-btn:hover {
-  background-color: $pink-color;
+  background-color: #fee;
 }
 
 .current-div {
@@ -61,7 +69,6 @@ $dark-charcoal: #202020;
 }
 
 .current-top {
-  // border: 1px solid pink;
   display: inline-block;
   margin: 10px 10px;
   float: right;
@@ -93,10 +100,7 @@ $dark-charcoal: #202020;
   text-align: center;
 }
 
-.brief-summary {
-  font-size: 70%;
-  margin-left: 20px;
-}
+
 
 .current-bottom {
   display: flex;
@@ -107,14 +111,20 @@ $dark-charcoal: #202020;
 
 .current-icon {
   text-align: center;
+  text-shadow: 0 -10px 100px, 0 0 2px, 0 0 1em $pink-color, 0 0 0.5em $pink-color, 0 0 0.1em $pink-color;
 }
 
 .summary {
   margin: 5px;
-  font-size: 80%; 
+  font-size: 80%;
 }
 
 .day {
+  font-size: 70%;
+  margin-left: 20px;
+}
+
+.brief-summary {
   font-size: 70%;
   display: inline-block;
 }
