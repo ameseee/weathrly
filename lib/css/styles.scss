@@ -27,8 +27,10 @@ $dark-charcoal: #202020;
   text-shadow: 0 -10px 100px, 0 0 2px, 0 0 1em $pink-color, 0 0 0.5em $pink-color, 0 0 0.1em $pink-color;
 }
 
-.hide {
-  display: none;
+
+
+.pipe {
+  color: #676767 !important;
 }
 
 //SEARCH
@@ -96,7 +98,7 @@ $dark-charcoal: #202020;
 .wearthrly {
   margin: 0px 5px 10px 15px;
   padding-top: 10px;
-  color: $pink-color;
+  color: #FF5B5B;
   font-family: 'Vibur';
   font-size: 300%;
 }
@@ -181,6 +183,7 @@ $dark-charcoal: #202020;
 
 .today-section {
   display: inline-block;
+  width: 95%;
 }
 
 .day {
@@ -196,7 +199,6 @@ $dark-charcoal: #202020;
   overflow: scroll;
   padding: 5px;
   margin-bottom: 10px;
-
 }
 
 .today-header {
@@ -210,6 +212,7 @@ $dark-charcoal: #202020;
 //THIS WEEK SECTION
 .this-week-section {
   display: inline-block;
+  width: 95%;
 }
 
 .day-card-container {
@@ -235,7 +238,8 @@ $dark-charcoal: #202020;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 10px 5px;
+  padding: 0 5px 10px 5px;
+  margin: 10px 0 0 0;
   width: 80px;
   border-right: 0.5px solid #676767;
 }
@@ -254,4 +258,30 @@ $dark-charcoal: #202020;
 .card-lo-hi {
   font-size: 90%;
   text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+//MEDIA QUERIES
+@media (max-width: 850px) {
+  .bottom-of-page {
+    flex-direction: column;
+  }
+
+  .right-desktop {
+    width: 90%;
+  }
+
+  // .today-header {
+  //   width: 100%;
+  // }
+
+  .current-section {
+    width: 90%;
+    margin-bottom: 25px;
+  }
+
+
 }
