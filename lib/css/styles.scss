@@ -16,6 +16,10 @@ $dark-charcoal: #202020;
   padding: 0;
 }
 
+body {
+  background-color: $dark-charcoal;
+}
+
 .wi {
   margin: 14px 0 12px 0;
   color: $light-grey;
@@ -27,10 +31,13 @@ $dark-charcoal: #202020;
   text-shadow: 0 -10px 100px, 0 0 2px, 0 0 1em $pink-color, 0 0 0.5em $pink-color, 0 0 0.1em $pink-color;
 }
 
-
-
 .pipe {
   color: #676767 !important;
+}
+
+.app {
+  margin-right: 15%;
+  margin-left: 15%;
 }
 
 //SEARCH
@@ -119,7 +126,7 @@ $dark-charcoal: #202020;
 .current-temp {
   font-size: 200%;
   text-align: center;
-  margin: 35px 0 50px 0;
+  margin: 35px 0 40px 0;
 }
 
 .current-icon {
@@ -134,21 +141,19 @@ $dark-charcoal: #202020;
 
 //BOTTOM OF PAGE
 .bottom-of-page {
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
 }
 
 .right-desktop {
   display: inline-block;
-  margin-left: 2.5%;
-  width: 75%;
+  width: 100%;
 }
 
 //CURRENT DAY SECTION
 .current-section {
   display: inline-block;
-  margin-left: 2.5%;
-  width: 25%;
+  width: 100%;
 }
 
 .current-header {
@@ -160,7 +165,7 @@ $dark-charcoal: #202020;
 }
 
 .summary {
-  margin: 5px;
+  margin: 5px 5px 15px 5px;
   font-size: 100%;
 }
 
@@ -183,12 +188,12 @@ $dark-charcoal: #202020;
 
 .today-section {
   display: inline-block;
-  width: 95%;
+  width: 100%;
 }
 
 .day {
   margin-left: 20px;
-  font-size: 90%;
+  font-size: 100%;
 }
 
 .card-container {
@@ -212,7 +217,7 @@ $dark-charcoal: #202020;
 //THIS WEEK SECTION
 .this-week-section {
   display: inline-block;
-  width: 95%;
+  width: 100%;
 }
 
 .day-card-container {
@@ -240,7 +245,7 @@ $dark-charcoal: #202020;
   justify-content: space-between;
   padding: 0 5px 10px 5px;
   margin: 10px 0 0 0;
-  width: 75px;
+  min-width: 75px;
   border-right: 0.5px solid #676767;
 }
 
@@ -266,32 +271,19 @@ $dark-charcoal: #202020;
 
 //MEDIA QUERIES
 @media (max-width: 860px) {
-  .bottom-of-page {
-    flex-direction: column;
-    align-items: center;
+  //
+  .app {
+    margin-right: 10%;
+    margin-left: 10%;
   }
 
-  .right-desktop {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-    align-items: center;
-  }
+}
 
-  .current-section {
-    width: 90%;
-    margin-bottom: 25px;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .summary {
-    margin: 0 0 25px 5px;
-  }
-
-  .current-temp {
-    margin-bottom: 40px;
+@media (max-width: 600px) {
+  //
+  .app {
+    margin-right: 7.5%;
+    margin-left: 7.5%;
   }
 
 }
