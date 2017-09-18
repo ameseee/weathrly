@@ -195,8 +195,8 @@ $dark-charcoal: #202020;
   display: flex;
   flex-wrap: nowrap;
   height: 95px;
-  // overflow: auto;
-  // overflow: scroll;
+  overflow: auto;
+  overflow: scroll;
   padding: 5px;
   margin-bottom: 10px;
 }
