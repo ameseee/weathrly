@@ -96,7 +96,7 @@ $dark-charcoal: #202020;
 }
 
 .wearthrly {
-  margin: 0px 5px 10px 15px;
+  margin: 0px 5px 10px 2.5%;
   padding-top: 10px;
   color: #FF5B5B;
   font-family: 'Vibur';
@@ -140,14 +140,14 @@ $dark-charcoal: #202020;
 
 .right-desktop {
   display: inline-block;
-  margin-left: 3%;
-  width: 70%;
+  margin-left: 2.5%;
+  width: 75%;
 }
 
 //CURRENT DAY SECTION
 .current-section {
   display: inline-block;
-  margin-left: 3%;
+  margin-left: 2.5%;
   width: 25%;
 }
 
@@ -195,8 +195,8 @@ $dark-charcoal: #202020;
   display: flex;
   flex-wrap: nowrap;
   height: 95px;
-  overflow: hidden;
-  overflow: scroll;
+  // overflow: auto;
+  // overflow: scroll;
   padding: 5px;
   margin-bottom: 10px;
 }
@@ -240,7 +240,7 @@ $dark-charcoal: #202020;
   justify-content: space-between;
   padding: 0 5px 10px 5px;
   margin: 10px 0 0 0;
-  width: 80px;
+  width: 75px;
   border-right: 0.5px solid #676767;
 }
 
@@ -256,7 +256,7 @@ $dark-charcoal: #202020;
 }
 
 .card-lo-hi {
-  font-size: 90%;
+  font-size: 75%;
   text-align: center;
 }
 
@@ -265,19 +265,33 @@ $dark-charcoal: #202020;
 }
 
 //MEDIA QUERIES
-@media (max-width: 850px) {
+@media (max-width: 860px) {
   .bottom-of-page {
     flex-direction: column;
+    align-items: center;
   }
 
   .right-desktop {
-    width: 90%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
   }
 
   .current-section {
     width: 90%;
     margin-bottom: 25px;
+    display: block;
+    margin: 0 auto;
   }
 
+  .summary {
+    margin: 0 0 25px 5px;
+  }
+
+  .current-temp {
+    margin-bottom: 40px;
+  }
 
 }
