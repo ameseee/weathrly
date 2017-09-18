@@ -47,31 +47,34 @@ body {
 }
 
 .search-input {
-  height: 24px;
-  margin-right: 5px;
+  height: 40px;
+  margin-left: 1%;
   outline: none;
-  padding: 5px;
+  padding: 10px;
   background-color: $dark-charcoal;
   border: $dark-charcoal;
   border-bottom: 0.5px solid $light-grey;
   color: $light-grey;
-  caret-color: $light-grey;
+  caret-color: $pink-color;
+  width: 87%;
+  font-size: 130%;
 }
 
 .search-input::placeholder {
-  color: $light-grey;
+  color: #9B9B9B;
 }
 
 .search-btn {
-  height: 24px;
+  height: 40px;
   padding: 5px 8px;
   background-color: $pink-color;
   border: none;
   border-radius: 4px;
-  box-shadow: 0 -10px 100px, 0 0 2px, 0 0 1em $pink-color, 0 0 0.5em $pink-color, 0 0 0.1em $pink-color;
   color: #fff;
   font-family: 'Karla';
   outline: none;
+  width: 12%;
+  font-size: 120%;
 }
 
 .search-btn:hover {
@@ -96,10 +99,11 @@ body {
 }
 
 .current-top {
-  display: inline-block;
-  float: right;
-  margin: 15px;
+  display: flex;
+  flex-direction: row;
   padding-top: 10px;
+  width: 100%;
+  align-items: center;
 }
 
 .wearthrly {
@@ -108,14 +112,22 @@ body {
   color: #FF5B5B;
   font-family: 'Vibur';
   font-size: 300%;
+  align-self: flex-start;
+  width: 30%;
 }
 
 .location {
   margin-right: 10px;
   font-size: 120%;
   text-transform: uppercase;
+  text-align: center;
+  width: 30%;
 }
 
+.empty-div {
+  align-self: flex-end;
+  width: 30%;
+}
 .search-icon {
   height: auto;
   margin: 0 5px 0 0;
