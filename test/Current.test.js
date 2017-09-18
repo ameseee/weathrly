@@ -1,15 +1,25 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Current from '../lib/Current';
-import App from '../App';
+import Current from '../lib/components/Current';
+import App from '../lib/App';
+import testData from './80014';
 
 describe('CURRENT', () => {
 
-  it('should ...', () => {
+
+  it('should render', () => {
 
   });
 
-  it('should ...', () => {
+  it('should render seven hourly cards', () => {
+
+  });
+
+  it('should render ten daily forecast cards', () => {
+
+  });
+
+  it('should render hourly temperature', () => {
 
   });
 
