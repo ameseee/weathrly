@@ -40,7 +40,7 @@ describe('APP', () => {
     const app = mount(<App />);
     expect(app.instance().getLocation()).toEqual(undefined);
 
-    const welcome = app.find('.welcome-search');
+    const welcome = app.find('.welcome');
     expect(welcome).toHaveLength(1);
   });
 
@@ -50,6 +50,8 @@ describe('APP', () => {
 
   it('should store data in state once fetched from API', () => {
 
+    //this.state.data === {}
+    //this.state.data !=== {}
   });
 
 });
