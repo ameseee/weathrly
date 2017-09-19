@@ -21,13 +21,16 @@ body {
 }
 
 .welcome {
-  display: inline-block;
-  width: 100%;
+  display: block;
+  width: 60%;
+  margin: 0 auto;
 }
 
 .welcome-weathrly {
   font-size: 500%;
-  margin-top: 15%;
+  // margin-top: 15%;
+  position: absolute;
+  top: 25%;
   text-align: center;
   color: $pink-color;
   font-family: 'Vibur';
@@ -38,6 +41,9 @@ body {
   font-family: 'Karla';
   text-align: center;
   font-size: 125%;
+  position: absolute;
+  top: 45%;
+  left: center;
 }
 
 .wi {
@@ -56,8 +62,8 @@ body {
 }
 
 .app {
-  margin-right: 15%;
-  margin-left: 15%;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
 //SEARCH
@@ -77,7 +83,7 @@ body {
   color: $light-grey;
   caret-color: $pink-color;
   width: 87%;
-  font-size: 130%;
+  font-size: 120%;
 }
 
 .search-input::placeholder {
@@ -94,7 +100,7 @@ body {
   font-family: 'Karla';
   outline: none;
   width: 12%;
-  font-size: 120%;
+  font-size: 110%;
 }
 
 .search-btn:hover {
@@ -107,8 +113,8 @@ body {
   background-color: $light-charcoal;
   //color - semi transparent
   height: auto;
-  margin-left: 19%;
-  width: 80%;
+  margin-left: 13%;
+  width: 87%;
   display: flex;
   flex-direction: column;
   //have it lay OVER the other elements
@@ -118,7 +124,7 @@ body {
   color: $light-grey;
   font-family: 'Karla';
   font-size: 120%;
-  padding-left: 10px;
+  padding: 2px 0 3px 10px;
 }
 
 .drop-down-options:hover {
@@ -325,6 +331,10 @@ body {
     margin-left: 10%;
   }
 
+  .welcome {
+    width: 80%;
+  }
+
   .welcome-weathrly {
     font-size: 400%;
   }
@@ -337,6 +347,16 @@ body {
   .search-btn {
     font-size: 100%;
     width: 18%;
+  }
+
+  .suggestions-box {
+    margin-left: 19%;
+    width: 80%;
+  }
+
+  .drop-down-options {
+    font-size: 100%;
+    padding-left: 10px;
   }
 }
 
