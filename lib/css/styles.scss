@@ -99,6 +99,7 @@ body {
 
 .search-btn:hover {
   background-color: #FFA2A2;
+  cursor: pointer;
 }
 
 .suggestions-box {
@@ -106,18 +107,23 @@ body {
   background-color: $light-charcoal;
   //color - semi transparent
   height: auto;
-  margin-left: 13%;
-  width: 87%;
+  margin-left: 19%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   //have it lay OVER the other elements
 }
 
-.suggestions-box p {
+.drop-down-options {
   color: $light-grey;
   font-family: 'Karla';
   font-size: 120%;
   padding-left: 10px;
+}
+
+.drop-down-options:hover {
+  color: $pink-color;
+  cursor: pointer;
 }
 
 //CURRENT
