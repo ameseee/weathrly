@@ -131,13 +131,13 @@ body {
   font-family: 'Karla';
 }
 
-.current-top {
-  display: flex;
-  flex-direction: row;
-  padding-top: 10px;
-  width: 100%;
-  align-items: center;
-}
+// .current-top {
+//   display: flex;
+//   flex-direction: row;
+//   padding-top: 10px;
+//   width: 100%;
+//   align-items: center;
+// }
 
 .wearthrly {
   margin: 0px 5px 10px 2.5%;
@@ -145,15 +145,15 @@ body {
   color: #FF5B5B;
   font-family: 'Vibur';
   font-size: 300%;
-  align-self: flex-start;
-  width: 30%;
+  text-align: center;
 }
 
 .location {
   font-size: 120%;
   text-transform: uppercase;
   text-align: center;
-  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .empty-div {
