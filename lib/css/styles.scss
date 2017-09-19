@@ -20,6 +20,20 @@ body {
   background-color: $dark-charcoal;
 }
 
+.welcome-weathrly {
+  font-size: 500%;
+  text-align: center;
+  color: $pink-color;
+  font-family: 'Vibur';
+}
+
+.welcome-directions {
+  color: $light-grey;
+  font-family: 'Karla';
+  text-align: center;
+  font-size: 125%;
+}
+
 .suggestions-box {
   color: black;
   background-color: yellow;
