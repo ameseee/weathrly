@@ -13054,4 +13054,34 @@ const testData = {
 	]
 }
 
-export default testData; 
+//console.log(testData.forecast.simpleforecast.forecastday.map( day => day.low.celsius ));
+
+
+// zip: response.current_observation.display_location.zip,
+// location: response.current_observation.display_location.full,
+// briefSummary: response.current_observation.weather,
+// day: response.forecast.txt_forecast.forecastday[0].title,
+// tempF: response.current_observation.temp_f,
+// tempC: response.current_observation.temp_c,
+// highF: response.forecast.simpleforecast.forecastday[0].high.fahrenheit,
+// lowF: response.forecast.simpleforecast.forecastday[0].low.fahrenheit,
+// highC: response.forecast.simpleforecast.forecastday[0].high.celsius,
+// lowC: response.forecast.simpleforecast.forecastday[0].low.celsius,
+// verboseSummaryF: response.forecast.txt_forecast.forecastday[0].fcttext,
+// verboseSummaryC: response.forecast.txt_forecast.forecastday[0].fcttext_metric,
+// currentIcon: response.current_observation.icon,
+
+// sevenHourTimes: response.hourly_forecast.map( hour => hour.FCTTIME.civil).slice(0,7),
+// sevenHourAMPM: response.hourly_forecast.map( hour => hour.FCTTIME.ampm ).slice(0,7),
+// sevenHourTempsF: response.hourly_forecast.map( hour => hour.temp.english).slice(0,7),
+// sevenHourTempsC: response.hourly_forecast.map( hour => hour.temp.metric).slice(0,7),
+// sevenHourIcon: response.hourly_forecast.map( hour => hour.icon).slice(0,7),
+
+// tenDayDay: response.forecast.simpleforecast.forecastday.map( day => day.date.weekday_short.toUpperCase() ),
+// tenDayHighF: response.forecast.simpleforecast.forecastday.map( day => day.high.fahrenheit ),
+// tenDayLowF: response.forecast.simpleforecast.forecastday.map( day => day.low.fahrenheit ),
+// tenDayHighC: response.forecast.simpleforecast.forecastday.map( day => day.high.celsius ),
+// tenDayLowC: response.forecast.simpleforecast.forecastday.map( day => day.low.celsius ),
+// tenDayIcon: response.forecast.simpleforecast.forecastday.map( day => day.icon)
+
+//export default testData;
