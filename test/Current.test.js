@@ -19,25 +19,27 @@ describe('CURRENT', () => {
 
   it('should render the location', () => {
     const location = component.find();
-    expect(location.text()).toEqual('Denver, CO');
+    expect(location.text()).toEqual('Aurora, CO');
   });
 
   it('should render the day', () => {
     const day = component.find();
-    expect(day.text()).toEqual('THU');
+    expect(day.text()).toEqual('MON');
   });
 
   it('should render the current high/low for the day', () => {
-
+    const lowHigh = component.find();
+    expect(lowHigh.text()).toEqual();
   });
 
   it('should render the current summary - brief', () => {
-
+    const summary = component.find();
+    expect(summary.text()).toEqual();
   });
 
   it('should render the current summary - verbose', () => {
-
+    const verboseSummary = component.find();
+    expect(verboseSummary.text()).toEqual();
   });
 
-})
-;
+});

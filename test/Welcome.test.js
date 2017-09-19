@@ -15,4 +15,5 @@ describe('WELCOME PAGE', () => {
     const searchBar = component.find('input.search-bar');
     expect(searchBar).toHaveLength(1);
   });
+  
 });
