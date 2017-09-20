@@ -13054,8 +13054,4 @@ const testData = {
 	]
 }
 
-//console.log(testData.forecast.simpleforecast.forecastday.map( day => day.low.celsius ));
-
-
-
-//export default testData;
+export default testData;

@@ -6,14 +6,14 @@ describe('WELCOME PAGE', () => {
 
   it('should render "welcome"', () => {
     const component = shallow(<Welcome />);
-    const greeting = component.find('h2');
-    expect(greeting.text()).toEqual('welcome');
+    const greeting = component.find('.welcome-weathrly');
+    expect(greeting.text()).toEqual('weathrly');
   });
 
-  it('should render the search bar', () => {
+  it('should render search bar', () => {
     const component = mount(<Welcome />);
-    const searchBar = component.find('input.search-bar');
-    expect(searchBar).toHaveLength(1);
+    const current = component.find('.search-div');
+    expect(current.nodes.length).toEqual(1);
   });
-  
+
 });

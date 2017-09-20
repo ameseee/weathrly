@@ -1,15 +1,21 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import TenDay from '../lib/components/TenDay';
-import App from '../lib/App';
-import testData from './80014';
 
 describe('TEN DAY', () => {
+  let wrapper;
 
-  it('should render 10 day cards', () => {
-    let component = mount(<App dayCards={} />);
-    const cards = component.find('div.weather-card');
-    expect(cards).toHaveLength(10);
+  it('should render day weather cards', () => {
+    wrapper = mount(
+      <TenDay
+        tenDayDay={[ 'MON', 'TUE']}
+        tenDayHighF={[ '82', '84']}
+        tenDayLowF={[ '58', '48']}
+        tenDayHighC={[ '28', '29']}
+        tenDayLowC={[ '14', '9']}
+        tenDayIcon={[ 'clear', 'partlycloudy']}
+       /> );
+    const cards = wrapper.find('TenDayCard').length
+    expect(cards).toEqual(2)
   });
-
 });
