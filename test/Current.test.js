@@ -21,13 +21,7 @@ let component;
       verboseSummaryF='Abundant sunshine. High 82F. Winds SE at 5 to 10 mph.'
       verboseSummaryC='Sunny. High 28C. Winds SE at 10 to 15 km/h.'
       currentIcon='clear'
-      hourlyTime="[ '12:00 PM',
-                    '1:00 PM',
-                    '2:00 PM',
-                    '3:00 PM',
-                    '4:00 PM',
-                    '5:00 PM',
-                    '6:00 PM' ]"
+      hourlyTime="[ '12:00 PM', '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM','6:00 PM' ]"
       hourlyTempF="[ '76', '78', '80', '80', '81', '81', '80' ]"
       hourlyTempC="[ '24', '26', '27', '27', '27', '27', '27' ]"
       hourlyIcon="[ 'clear', 'clear', 'clear', 'clear', 'clear', 'clear', 'clear' ]"
@@ -36,16 +30,7 @@ let component;
       tenDayLowF="[ '58', '48', '54', '55', '46', '45', '42', '43', '43', '44' ]"
       tenDayHighC="[ '28', '29', '27', '29', '24', '18', '16', '13', '18', '20' ]"
       tenDayLowC="[ '14', '9', '12', '13', '8', '7', '6', '6', '6', '7' ]"
-      tenDayIcon="[ 'clear',
-                    'partlycloudy',
-                    'clear',
-                    'clear',
-                    'mostlycloudy',
-                    'mostlycloudy',
-                    'chancerain',
-                    'chancerain',
-                    'partlycloudy',
-                    'partlycloudy' ]"
+      tenDayIcon="[ 'clear', 'partlycloudy', 'clear', 'clear', 'mostlycloudy', 'mostlycloudy', 'chancerain', 'chancerain', 'partlycloudy', 'partlycloudy' ]"
     /> );
   });
 
