@@ -36,9 +36,10 @@ describe('APP', () => {
     };
 
     beforeEach(() => {
-      wrapper = mount(
+      wrapper = shallow(
         <App />
       );
+      wrapper.setState({ data: { zip: '80014' } });
     });
 
     it('it should render Search component', () => {
