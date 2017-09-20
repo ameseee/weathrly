@@ -2,9 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Karla);
 
 $pink-color: #ff4444;
-$green-color: #A2FF44;
-$purple-color: #A244FF;
-$blue-color: #44ffff;
 $light-grey: #CECECE;
 $light-charcoal: #3B3B3B;
 $dark-charcoal: #202020;
@@ -18,32 +15,6 @@ $dark-charcoal: #202020;
 
 body {
   background-color: $dark-charcoal;
-}
-
-.welcome {
-  display: block;
-  width: 60%;
-  margin: 0 auto;
-}
-
-.welcome-weathrly {
-  font-size: 500%;
-  // margin-top: 15%;
-  position: absolute;
-  top: 25%;
-  text-align: center;
-  color: $pink-color;
-  font-family: 'Vibur';
-}
-
-.welcome-directions {
-  color: $light-grey;
-  font-family: 'Karla';
-  text-align: center;
-  font-size: 125%;
-  position: absolute;
-  top: 45%;
-  left: center;
 }
 
 .wi {
@@ -66,6 +37,30 @@ body {
   margin-left: 20%;
 }
 
+//WELCOME PAGE
+.welcome {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.welcome-weathrly {
+  font-size: 500%;
+  margin-top: 15%;
+  text-align: center;
+  color: $pink-color;
+  font-family: 'Vibur';
+}
+
+.welcome-directions {
+  color: $light-grey;
+  font-family: 'Karla';
+  text-align: center;
+  font-size: 125%;
+  margin-top: 20px;
+  left: center;
+}
+
 //SEARCH
 .search-div {
   padding-top: 10px;
@@ -77,12 +72,12 @@ body {
   margin-left: 1%;
   outline: none;
   padding: 10px;
+  width: 87%;
   background-color: $dark-charcoal;
   border: $dark-charcoal;
   border-bottom: 0.5px solid $light-grey;
-  color: $light-grey;
   caret-color: $pink-color;
-  width: 87%;
+  color: $light-grey;
   font-size: 120%;
 }
 
@@ -93,13 +88,13 @@ body {
 .search-btn {
   height: 40px;
   padding: 5px 8px;
+  outline: none;
+  width: 12%;
   background-color: $pink-color;
   border: none;
   border-radius: 2px;
   color: #fff;
   font-family: 'Karla';
-  outline: none;
-  width: 12%;
   font-size: 110%;
 }
 
@@ -109,21 +104,20 @@ body {
 }
 
 .suggestions-box {
+  display: flex;
   position: fixed;
-  background-color: rgba(59, 59, 59, 0.9);
+  flex-direction: column;
   height: auto;
   margin-left: 7.8%;
   width: 52.2%;
-  display: flex;
-  flex-direction: column;
-  //have it lay OVER the other elements
+  background-color: rgba(59, 59, 59, 0.9);
 }
 
 .drop-down-options {
+  padding: 2px 0 3px 10px;
   color: $light-grey;
   font-family: 'Karla';
   font-size: 120%;
-  padding: 2px 0 3px 10px;
 }
 
 .drop-down-options:hover {
@@ -148,25 +142,11 @@ body {
   font-family: 'Karla';
 }
 
-.wearthrly {
-  margin: 15px 5px 15px 2.5%;
-  padding-top: 10px;
-  color: $pink-color;
-  font-family: 'Vibur';
-  font-size: 200%;
-  text-align: center;
-}
-
 .location {
-  font-size: 120%;
+  font-size: 140%;
   text-transform: uppercase;
   text-align: center;
   margin: 30px 0 40px 0;
-}
-
-.empty-div {
-  align-self: flex-end;
-  width: 30%;
 }
 
 .search-icon {
@@ -253,10 +233,10 @@ body {
   display: flex;
   flex-wrap: nowrap;
   height: 95px;
+  margin-bottom: 10px;
   overflow: auto;
   overflow: scroll;
   padding: 5px;
-  margin-bottom: 10px;
 }
 
 .today-header {
@@ -296,9 +276,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0 5px 10px 5px;
-  margin: 10px 0 0 0;
   min-width: 75px;
+  margin: 10px 0 0 0;
+  padding: 0 5px 10px 5px;
   border-right: 0.5px solid #676767;
 }
 
@@ -308,7 +288,7 @@ body {
   text-align: center;
 }
 
-.hour-card-temp {
+.hour-card-temp-f {
   font-size: 110%;
   text-align: center;
 }
@@ -322,9 +302,18 @@ body {
   display: none;
 }
 
+.wearthrly {
+  margin: 15px 5px 15px 2.5%;
+  padding-top: 10px;
+  text-align: center;
+  color: $pink-color;
+  font-family: 'Vibur';
+  font-size: 200%;
+}
+
 //MEDIA QUERIES
 @media (max-width: 860px) {
-  //
+
   .app {
     margin-right: 10%;
     margin-left: 10%;
@@ -360,7 +349,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  //
+
   .app {
     margin-right: 7.5%;
     margin-left: 7.5%;
