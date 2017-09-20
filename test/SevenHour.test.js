@@ -9,11 +9,12 @@ describe('SEVEN HOUR', () => {
     wrapper = mount(
       <SevenHour
         hourlyTime={ ['9 PM', '10 PM'] }
-        hourlyTempF={[ '82', '84' ]}
-        hourlyTempC={[ '28', '29' ]}
+        hourlyTempF={['82', '84']}
+        hourlyTempC={['28', '29']}
         hourlyIcon={['sunny', 'haze']}
-      /> );
-      const cards = wrapper.find('HourCard').length
-      expect(cards).toEqual(2);
+    />);
+    const cards = wrapper.find('HourCard').length;
+    expect(cards).toEqual(2);
   });
+
 });

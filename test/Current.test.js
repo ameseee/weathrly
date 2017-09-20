@@ -5,10 +5,10 @@ import App from '../lib/App';
 import testData from './80014';
 
 describe('CURRENT', () => {
-let component;
+  let component;
 
   beforeEach(() => {
-    component = shallow( <Current
+    component = shallow(<Current
       location='Aurora, CO'
       briefSummary='Clear'
       day='Monday'
@@ -30,8 +30,16 @@ let component;
       tenDayLowF="[ '58', '48', '54', '55', '46', '45', '42', '43', '43', '44' ]"
       tenDayHighC="[ '28', '29', '27', '29', '24', '18', '16', '13', '18', '20' ]"
       tenDayLowC="[ '14', '9', '12', '13', '8', '7', '6', '6', '6', '7' ]"
-      tenDayIcon="[ 'clear', 'partlycloudy', 'clear', 'clear', 'mostlycloudy', 'mostlycloudy', 'chancerain', 'chancerain', 'partlycloudy', 'partlycloudy' ]"
-    /> );
+      tenDayIcon="[ 'clear',
+                    'partlycloudy',
+                    'clear', 'clear',
+                    'mostlycloudy',
+                    'mostlycloudy',
+                    'chancerain',
+                    'chancerain',
+                    'partlycloudy',
+                    'partlycloudy' ]"
+    />);
   });
 
   it('should render the current temp', () => {

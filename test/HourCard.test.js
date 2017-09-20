@@ -5,7 +5,7 @@ import HourCard from '../lib/components/HourCard';
 describe('HOUR CARD', () => {
   let wrapper;
 
-  beforeEach( () => {
+  beforeEach(() => {
     wrapper = shallow(
       <HourCard
         hour={'10 PM'}
@@ -13,8 +13,8 @@ describe('HOUR CARD', () => {
         tempF={'88'}
         tempC={'42'}
         />
-    )
-  })
+    );
+  });
 
   it('should render hour', () => {
     const hour = wrapper.find('.hour-card-hour');
@@ -23,7 +23,7 @@ describe('HOUR CARD', () => {
 
   it('should render icon', () => {
     const icon = wrapper.find('.small-icon');
-    expect(icon.text()).toEqual('')
+    expect(icon.text()).toEqual('');
   });
 
   it('should render tempF', () => {
@@ -35,4 +35,5 @@ describe('HOUR CARD', () => {
     const tempC = wrapper.find('.hour-card-temp-c');
     expect(tempC.text()).toEqual('42°');
   });
+
 });
