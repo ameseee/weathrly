@@ -1,6 +1,11 @@
-# React Starter Kit
+# Weathrly
 
+### Team
+Amy Holt & Adam Mescher
 To install the dependencies:
+
+### Wireframes
+
 
 ```
 npm install
