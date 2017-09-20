@@ -5,17 +5,17 @@ import TenDayCard from '../lib/components/TenDayCard';
 describe('TEN DAY CARD', () => {
   let wrapper;
 
-  beforeEach( () => {
-      wrapper = shallow(
-        <TenDayCard
-          day={'MON'}
-          icon={'sunny'}
-          highF={'88'}
-          lowF={'44'}
-          highC={'22'}
-          lowC={'11'}
-        />
-      )
+  beforeEach(() => {
+    wrapper = shallow(
+      <TenDayCard
+        day={'MON'}
+        icon={'sunny'}
+        highF={'88'}
+        lowF={'44'}
+        highC={'22'}
+        lowC={'11'}
+      />
+    );
   });
 
   it('should render day abbreviation', () => {
@@ -37,4 +37,5 @@ describe('TEN DAY CARD', () => {
     const highAndLow = wrapper.find('.card-lo-hi-c');
     expect(highAndLow.text()).toEqual('11° | 22°');
   });
+
 });
